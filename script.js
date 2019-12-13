@@ -51,7 +51,7 @@ function setColor() {
     
     if (currentHour === time1El) {
         input1.classList.add("red");
-    } else if (moment(time1El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time1El) {
         input1.classList.add("gray")
     } else {
         input1.classList.add("green")
@@ -59,7 +59,7 @@ function setColor() {
 
     if (currentHour === time2El) {
         input2.classList.add("red");
-    } else if (moment(time2El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time2El) {
         input2.classList.add("gray")
     } else {
         input2.classList.add("green")
@@ -67,7 +67,7 @@ function setColor() {
 
     if (currentHour === time3El) {
         input3.classList.add("red");
-    } else if (moment(time3El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time3El) {
         input3.classList.add("gray")
     } else {
         input3.classList.add("green")
@@ -75,7 +75,7 @@ function setColor() {
 
     if (currentHour === time4El) {
         input4.classList.add("red");
-    } else if (moment(time4El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time4El) {
         input4.classList.add("gray")
     } else {
         input4.classList.add("green")
@@ -83,7 +83,7 @@ function setColor() {
 
     if (currentHour === time5El) {
         input5.classList.add("red");
-    } else if (moment(time5El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time5El) {
         input5.classList.add("gray")
     } else {
         input5.classList.add("green")
@@ -91,7 +91,7 @@ function setColor() {
 
     if (currentHour === time6El) {
         input6.classList.add("red");
-    } else if (moment(time6El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time6El) {
         input6.classList.add("gray")
     } else {
         input6.classList.add("green")
@@ -99,7 +99,7 @@ function setColor() {
 
     if (currentHour === time7El) {
         input7.classList.add("red");
-    } else if (moment(time7El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time7El) {
         input7.classList.add("gray")
     } else {
         input7.classList.add("green")
@@ -107,14 +107,14 @@ function setColor() {
 
     if (currentHour === time8El) {
         input8.classList.add("red");
-    } else if (moment(time8El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time8El) {
         input8.classList.add("gray")
     } else {
         input8.classList.add("green")
     }
     if (currentHour === time9El) {
         input9.classList.add("red");
-    } else if (moment(time9El).isBefore(moment(currentHour))) {
+    } else if (currentHour > time9El) {
         input9.classList.add("gray")
     } else {
         input9.classList.add("green")
