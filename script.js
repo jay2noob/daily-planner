@@ -8,7 +8,6 @@ document.getElementById("task-7").value = localStorage.getItem("3:00pm");
 document.getElementById("task-8").value = localStorage.getItem("4:00pm");
 document.getElementById("task-9").value = localStorage.getItem("5:00pm");
 
-let currentTime = moment();
 let dayEl = document.getElementById("day");
 
 function setDay() {
