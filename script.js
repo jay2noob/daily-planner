@@ -8,11 +8,11 @@ document.getElementById("task-7").value = localStorage.getItem("3:00pm");
 document.getElementById("task-8").value = localStorage.getItem("4:00pm");
 document.getElementById("task-9").value = localStorage.getItem("5:00pm");
 
-let currentTime = moment().format("HH");
+let currentTime = moment();
 let dayEl = document.getElementById("day");
 
 function setDay() {
-    dayEl.innerHTML = moment(currentTime).format("dddd MMM Mo YYYY");
+    dayEl.innerHTML = moment().format("dddd MMM Mo YYYY");
 }
 
 setDay();
@@ -52,7 +52,7 @@ function setColor() {
     
     if (currentHour === time1El) {
         input1.classList.add("red");
-    } else if (moment(time1El).isBefore(moment(currentTime))) {
+    } else if (moment(time1El).isBefore(moment(currentHour))) {
         input1.classList.add("gray")
     } else {
         input1.classList.add("green")
@@ -60,7 +60,7 @@ function setColor() {
 
     if (currentHour === time2El) {
         input2.classList.add("red");
-    } else if (moment(time2El).isBefore(moment(currentTime))) {
+    } else if (moment(time2El).isBefore(moment(currentHour))) {
         input2.classList.add("gray")
     } else {
         input2.classList.add("green")
@@ -68,7 +68,7 @@ function setColor() {
 
     if (currentHour === time3El) {
         input3.classList.add("red");
-    } else if (moment(time3El).isBefore(moment(currentTime))) {
+    } else if (moment(time3El).isBefore(moment(currentHour))) {
         input3.classList.add("gray")
     } else {
         input3.classList.add("green")
@@ -76,7 +76,7 @@ function setColor() {
 
     if (currentHour === time4El) {
         input4.classList.add("red");
-    } else if (moment(time4El).isBefore(moment(currentTime))) {
+    } else if (moment(time4El).isBefore(moment(currentHour))) {
         input4.classList.add("gray")
     } else {
         input4.classList.add("green")
@@ -84,7 +84,7 @@ function setColor() {
 
     if (currentHour === time5El) {
         input5.classList.add("red");
-    } else if (moment(time5El).isBefore(moment(currentTime))) {
+    } else if (moment(time5El).isBefore(moment(currentHour))) {
         input5.classList.add("gray")
     } else {
         input5.classList.add("green")
@@ -92,7 +92,7 @@ function setColor() {
 
     if (currentHour === time6El) {
         input6.classList.add("red");
-    } else if (moment(time6El).isBefore(moment(currentTime))) {
+    } else if (moment(time6El).isBefore(moment(currentHour))) {
         input6.classList.add("gray")
     } else {
         input6.classList.add("green")
@@ -100,7 +100,7 @@ function setColor() {
 
     if (currentHour === time7El) {
         input7.classList.add("red");
-    } else if (moment(time7El).isBefore(moment(currentTime))) {
+    } else if (moment(time7El).isBefore(moment(currentHour))) {
         input7.classList.add("gray")
     } else {
         input7.classList.add("green")
@@ -108,14 +108,14 @@ function setColor() {
 
     if (currentHour === time8El) {
         input8.classList.add("red");
-    } else if (moment(time8El).isBefore(moment(currentTime))) {
+    } else if (moment(time8El).isBefore(moment(currentHour))) {
         input8.classList.add("gray")
     } else {
         input8.classList.add("green")
     }
     if (currentHour === time9El) {
         input9.classList.add("red");
-    } else if (moment(time9El).isBefore(moment(currentTime))) {
+    } else if (moment(time9El).isBefore(moment(currentHour))) {
         input9.classList.add("gray")
     } else {
         input9.classList.add("green")
