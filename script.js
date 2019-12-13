@@ -11,7 +11,7 @@ document.getElementById("task-9").value = localStorage.getItem("5:00pm");
 let dayEl = document.getElementById("day");
 
 function setDay() {
-    dayEl.innerHTML = moment().format("dddd MMM Mo YYYY");
+    dayEl.innerHTML = moment().format("dddd MMM Do YYYY");
 }
 
 setDay();
